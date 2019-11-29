@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  *******************************************************************************/
-package de.dlr.sc.virsat.server.resources;
+package de.dlr.sc.virsat.server.rest.resources;
 
 
 import java.io.File;
@@ -17,7 +17,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;
 import org.eclipse.core.resources.ResourcesPlugin;
 
-import de.dlr.sc.virsat.server.dataaccess.VirSatGitAccess;
+import de.dlr.sc.virsat.server.dao.VirSatGitAccess;
+import de.dlr.sc.virsat.server.resources.context.WorkspaceUserContext;
 
 
 @Path(WorkspaceAccessResource.PATH_PERSISTENCE)

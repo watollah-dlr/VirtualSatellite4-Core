@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  *******************************************************************************/
-package de.dlr.sc.virsat.server.resources;
+package de.dlr.sc.virsat.server.rest.resources;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotSame;
@@ -16,7 +16,8 @@ import java.io.File;
 
 import org.junit.Test;
 
-import de.dlr.sc.virsat.server.resources.WorkspaceUserContext.IWorkspaceUserContextExecution;
+import de.dlr.sc.virsat.server.resources.context.WorkspaceUserContext;
+import de.dlr.sc.virsat.server.resources.context.WorkspaceUserContext.IWorkspaceUserContextExecution;
 
 public class WorkspaceUserContextTest {
 

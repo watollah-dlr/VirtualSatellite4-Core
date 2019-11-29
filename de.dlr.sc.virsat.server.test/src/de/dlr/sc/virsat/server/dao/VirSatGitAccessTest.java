@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  *******************************************************************************/
-package de.dlr.sc.virsat.server.dataaccess;
+package de.dlr.sc.virsat.server.dao;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
@@ -32,6 +32,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import de.dlr.sc.virsat.server.dao.VirSatGitAccess;
 import de.dlr.sc.virsat.server.test.AGitAndJettyServerTest;
 
 public class VirSatGitAccessTest {

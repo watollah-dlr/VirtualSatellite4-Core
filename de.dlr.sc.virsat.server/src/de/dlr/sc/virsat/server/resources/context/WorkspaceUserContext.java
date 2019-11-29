@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  *******************************************************************************/
-package de.dlr.sc.virsat.server.resources;
+package de.dlr.sc.virsat.server.resources.context;
 
 import java.io.File;
 import java.util.Collections;
@@ -90,7 +90,7 @@ public class WorkspaceUserContext {
 	 * context.
 	 *
 	 */
-	interface IWorkspaceUserContextExecution {
+	public interface IWorkspaceUserContextExecution {
 		/**
 		 * Method that gets called in the locked context
 		 * @param context the context that was used for locking

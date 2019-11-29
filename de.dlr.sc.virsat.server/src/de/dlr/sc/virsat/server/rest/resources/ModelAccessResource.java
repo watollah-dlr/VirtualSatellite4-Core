@@ -7,14 +7,14 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  *******************************************************************************/
-package de.dlr.sc.virsat.server.resources;
+package de.dlr.sc.virsat.server.rest.resources;
 
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;
 
-import de.dlr.sc.virsat.server.dataaccess.ModelAccess;
+import de.dlr.sc.virsat.server.dao.ModelAccess;
 
 @Path("/model")
 public class ModelAccessResource {

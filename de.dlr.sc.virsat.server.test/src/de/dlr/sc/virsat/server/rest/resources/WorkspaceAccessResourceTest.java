@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  *******************************************************************************/
-package de.dlr.sc.virsat.server.resources;
+package de.dlr.sc.virsat.server.rest.resources;
 
 
 import static org.junit.Assert.assertEquals;
@@ -26,7 +26,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import de.dlr.sc.virsat.server.dataaccess.VirSatGitAccess;
+import de.dlr.sc.virsat.server.dao.VirSatGitAccess;
+import de.dlr.sc.virsat.server.resources.context.WorkspaceUserContext;
+import de.dlr.sc.virsat.server.rest.resources.WorkspaceAccessResource;
 import de.dlr.sc.virsat.server.test.AGitAndJettyServerTest;
 
 public class WorkspaceAccessResourceTest extends AGitAndJettyServerTest {

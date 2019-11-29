@@ -13,10 +13,11 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import de.dlr.sc.virsat.server.dataaccess.VirSatGitAccessTest;
-import de.dlr.sc.virsat.server.resources.AccessTestResourceTest;
-import de.dlr.sc.virsat.server.resources.WorkspaceAccessResourceTest;
-import de.dlr.sc.virsat.server.resources.WorkspaceUserContextTest;
+import de.dlr.sc.virsat.server.dao.ServerProjectRepositoryDAOTest;
+import de.dlr.sc.virsat.server.dao.VirSatGitAccessTest;
+import de.dlr.sc.virsat.server.rest.resources.AccessTestResourceTest;
+import de.dlr.sc.virsat.server.rest.resources.WorkspaceAccessResourceTest;
+import de.dlr.sc.virsat.server.rest.resources.WorkspaceUserContextTest;
 import junit.framework.JUnit4TestAdapter;
 
 /**
@@ -26,6 +27,7 @@ import junit.framework.JUnit4TestAdapter;
 @RunWith(Suite.class)
 
 @SuiteClasses({
+	ServerProjectRepositoryDAOTest.class,
 	VirSatGitAccessTest.class,
 	WorkspaceAccessResourceTest.class,
 	AccessTestResourceTest.class,

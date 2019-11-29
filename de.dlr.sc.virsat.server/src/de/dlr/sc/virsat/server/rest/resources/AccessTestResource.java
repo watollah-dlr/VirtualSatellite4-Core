@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  *******************************************************************************/
-package de.dlr.sc.virsat.server.resources;
+package de.dlr.sc.virsat.server.rest.resources;
 
 
 import javax.ws.rs.GET;
@@ -16,7 +16,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import de.dlr.sc.virsat.server.dataaccess.Model;
+import de.dlr.sc.virsat.server.dao.Model;
 
 /**
  * Simple test resource for debugging purposes

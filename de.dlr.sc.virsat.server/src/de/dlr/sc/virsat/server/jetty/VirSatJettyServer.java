@@ -12,7 +12,7 @@ package de.dlr.sc.virsat.server.jetty;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 
-import de.dlr.sc.virsat.server.servlet.VirSatModelAccessServlet;
+import de.dlr.sc.virsat.server.rest.servlet.VirSatModelAccessServlet;
 
 import static org.eclipse.jetty.servlet.ServletContextHandler.NO_SESSIONS;
 
@@ -26,6 +26,8 @@ public class VirSatJettyServer {
 
 	public VirSatJettyServer() {
 	}
+	
+	
 	
 	private static final int VIRSAT_JETTY_PORT = 8000; 
 	
@@ -52,10 +54,12 @@ public class VirSatJettyServer {
 		
 		server = new Server(VIRSAT_JETTY_PORT);
 
+		
 		ServletContextHandler servletContextHandler = new ServletContextHandler(NO_SESSIONS);
 		servletContextHandler.setContextPath("/");
 		servletContextHandler.addServlet(VirSatModelAccessServlet.class, "/rest/*");
-
+		
+		
 		server.setHandler(servletContextHandler);
 
 		server.start();
