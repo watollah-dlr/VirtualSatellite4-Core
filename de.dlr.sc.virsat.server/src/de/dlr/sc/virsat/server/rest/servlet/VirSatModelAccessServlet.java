@@ -11,7 +11,6 @@
 package de.dlr.sc.virsat.server.rest.servlet;
 
 import javax.servlet.Servlet;
-
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.servlet.ServletContainer;
 
@@ -26,6 +25,9 @@ import de.dlr.virsat.external.lib.jersey.servlet.ApplicationServletContainer;
  *
  */
 public class VirSatModelAccessServlet extends ApplicationServletContainer implements Servlet {
+	
+	public static final String URI_PATH = "/rest/v1/server";
+	public static final String URI_PATH_WILDCARD = URI_PATH + "/*";
 	
 	@Override
 	protected Servlet onCreateServlet() {

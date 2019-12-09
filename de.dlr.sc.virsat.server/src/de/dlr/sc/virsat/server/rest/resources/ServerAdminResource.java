@@ -28,12 +28,6 @@ public class ServerAdminResource {
 	
 	List<RepositoryConfiguration> repos = new ArrayList<>();
 	
-	public ServerAdminResource() {
-		repos.add(new RepositoryConfiguration("test1", "localPath/Test1", "Project1", "f_functional", "ABSHS632626", Arrays.asList("user_one", "user_two")));
-		repos.add(new RepositoryConfiguration("test2", "localPath/Test2", "Project2", "f_functional", "ABSHS632626", Arrays.asList("user_one")));
-		repos.add(new RepositoryConfiguration("test3", "localPath/Test3", "Project3", "f_functional", "ABSHS632626", Arrays.asList("user_one", "user_two")));
-	}
-	
 	@GET
 	@Produces({MediaType.APPLICATION_JSON})
 	public List<RepositoryConfiguration> getTodos() {

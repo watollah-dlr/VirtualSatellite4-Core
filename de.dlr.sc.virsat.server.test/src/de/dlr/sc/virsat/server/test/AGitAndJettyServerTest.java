@@ -33,7 +33,8 @@ public abstract class AGitAndJettyServerTest {
 	
 	@BeforeClass
 	public static void setUpClass() throws InterruptedException, Exception {
-		server = new VirSatJettyServer();
+		server = new VirSatJettyServer(VirSatJettyServer.VIRSAT_JETTY_PORT);
+		server.init();
 		server.start();
 	}
 
